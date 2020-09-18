@@ -1,6 +1,6 @@
 const { dissoc } = require("ramda");
 const { tables, connection } = require("../../config").mysql;
-const { connect, updateRow } = require("../../utils").mysql;
+const { connect, updateRow } = require("../../common").utils.mysql;
 
 const updateGroup = async (input) => {
   const { id } = input;

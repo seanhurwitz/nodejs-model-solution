@@ -1,5 +1,5 @@
 const { tables, connection } = require("../../config").mysql;
-const { connect, getRowById } = require("../../utils").mysql;
+const { connect, getRowById } = require("../../common").utils.mysql;
 
 const getOrg = async (id) => {
   const db = connect(connection);

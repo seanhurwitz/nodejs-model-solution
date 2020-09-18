@@ -1,5 +1,5 @@
 const { tables, connection } = require("../../config").mysql;
-const { connect, addRow } = require("../../utils").mysql;
+const { connect, addRow } = require("../../common").utils.mysql;
 
 const createGroup = async (input) => {
   const newInput = { ...input, id: require("uniqid")("group_") };

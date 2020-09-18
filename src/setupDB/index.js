@@ -5,7 +5,7 @@ const {
   createDatabase,
   connect,
   createTable,
-} = require("../utils").mysql;
+} = require("../common").utils.mysql;
 const { tables, connection } = require("../config").mysql;
 const { breakConsole } = require("../common").functions;
 

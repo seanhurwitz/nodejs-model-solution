@@ -1,5 +1,5 @@
 const { tables, connection } = require("../../config").mysql;
-const { connect } = require("../../utils").mysql;
+const { connect } = require("../../common").utils.mysql;
 
 const getOrgSites = async (orgId) => {
   const db = connect(connection);

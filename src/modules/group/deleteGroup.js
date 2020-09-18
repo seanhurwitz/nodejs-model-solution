@@ -1,5 +1,5 @@
 const { tables, connection } = require("../../config").mysql;
-const { connect, deleteRow } = require("../../utils").mysql;
+const { connect, deleteRow } = require("../../common").utils.mysql;
 
 const deleteGroup = async (id) => {
   const db = connect(connection);
